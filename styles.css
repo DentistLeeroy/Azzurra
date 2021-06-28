@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.az-nav-link {
+    float: right;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 15px;
+    color: black;
+}
+
+.navbar-right li:hover {
+    background-color: none;
+}
+
+.az-nav-cta {
+    color: #FFDD00;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+}
+
+.az-nav-cta--button {
+    background-color: #FFDD00;
+    font-size: 22px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+.az-nav-cta--button:hover {
+    background-color: #ebcb01;
+}
+
+/*https://stackoverflow.com/questions/25878450/bootstrap-collapsed-navbar-buggy-open*/
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+
+.az-hero {
+    background-image: url(./restaurant.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+
+    color: white;
+}
+
+.az-hero-lead {
+    padding: 10% 0;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.az-historical {
+    width: 30%;
+    font-size: 24px;
+}
+
+.az-cuisine-type {
+    width: 220px;
+    height: 180px;
+}
+.az-cuisine-type--mid {
+    margin-top: -2%;
+}
+
+.az-center-text {
+    font-size: 22px;
+    padding: 0 22%;
+}
+
+.az-reviews {
+    background-image: url(./baloon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.az-contacts {
+    background-image: url(./map.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:initial;
+    height: 80vh;
+}

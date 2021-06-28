@@ -91,3 +91,7 @@
     background-attachment:initial;
     height: 80vh;
 }
+
+#comments {
+    height: calc(1.5rem + 160px);
+}

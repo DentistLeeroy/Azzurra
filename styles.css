@@ -2,8 +2,9 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
+    --site-green: #6C856D;
 }
-
+body { background-color: #373737; color: white;}
 
 
 .az-nav-link {
@@ -26,7 +27,7 @@
 }
 
 .az-nav-cta--button {
-    background-color: #FFDD00;
+    background-color: #fff;
     font-size: 22px;
     border: none;
     border-radius: 15px;
@@ -63,12 +64,24 @@
     font-size: 24px;
 }
 
-.az-cuisine-type {
-    width: 220px;
-    height: 180px;
+.az-cuisine-type--first {
+    margin-left: 1%;
 }
 .az-cuisine-type--mid {
-    margin-top: -2%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 2;
+}
+.az-cuisine-type:not(.az-cuisine-type--first) {
+    margin-left: .4%;
+}
+.az-cuisine-type {
+    height: 180px;
+    background-color: var(--site-green);
+}
+
+.az-cuisine-type > img {
+    width: 50%;
 }
 
 .az-center-text {

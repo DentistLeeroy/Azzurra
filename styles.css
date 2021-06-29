@@ -127,3 +127,9 @@ body { background-color: #373737; color: white;}
 .heading-margin{
     margin-bottom: 2%;
 }
+
+#line-style-reviews {
+    margin-left: 0.5%;
+    width: 15%;
+    border: 1.5px solid #fff;
+}

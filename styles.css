@@ -108,3 +108,7 @@ body { background-color: #373737; color: white;}
 #comments {
     height: calc(1.5rem + 160px);
 }
+
+#promoVideo {
+    min-width: 100%;
+}

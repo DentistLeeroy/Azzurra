@@ -3,6 +3,7 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     --site-green: #6C856D;
+    overflow-x: hidden;
 }
 body { background-color: #373737; color: white;}
 
@@ -169,8 +170,13 @@ body { background-color: #373737; color: white;}
     border: 1.5px solid #fff;
 }
 
+.az-hours {
+    padding-top: 10%;
+}
+
 @media screen and (max-width: 600px) {
     img {
         margin-left: 5%;
     }
+    footer {padding-left: 25%;}
 }

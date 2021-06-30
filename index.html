@@ -42,21 +42,36 @@
             </div>
         </nav>
 
-        <video autoplay muted loop id="promoVideo">
+        <!-- <video autoplay muted loop id="promoVideo">
             <source src="./photos-video/Azzurra_promo.mp4" type="video/mp4">
-        <div class="jumbotron jumbotron-fluid az-hero">
-            <div class="container text-center">
-              <h1 class="p-4">Welcome to the world of experiences!</h1>
-              <p class="lead az-hero-lead">
-                Azzura is spreading the Italian taste and captivating
-                people of Aalborg throughout the last 30 years
-              </p>
-              <u style="font-size: 21px;">
-                Try the Italian Taste
-              </u>
+            <div class="jumbotron jumbotron-fluid az-hero" style="position: absolute; top: 0; z-index: 999999;">
+                <div class="container text-center overlay">
+                    <h1 class="p-4">Welcome to the world of experiences!</h1>
+                    <p class="lead az-hero-lead">
+                        Azzura is spreading the Italian taste and captivating
+                        people of Aalborg throughout the last 30 years
+                    </p>
+                    <u style="font-size: 21px;">
+                        Try the Italian Taste
+                    </u>
+                </div>
             </div>
-        </div>
-        </video>
+        </video> -->
+        <section class="videoContainer">
+            <video autoplay muted loop>
+                <source src="./photos-video/Azzurra_promo.mp4" type="video/mp4"/>
+            </video>
+            <div class="overlay text-center pt-4">
+                <h1 class="p-4">Welcome to the world of experiences!</h1>
+                <p class="lead az-hero-lead">
+                    Azzura is spreading the Italian taste and captivating
+                    people of Aalborg throughout the last 30 years
+                </p>
+                <u style="font-size: 21px;">
+                    Try the Italian Taste
+                </u>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -85,7 +100,7 @@
                 With the roots in Italy - there is a strong focus on maintaining the authentic Italian taste, where the Emphasis is placed on a proper handling of the imported ingredients and a preparation that recreates the taste of how "Mamma" made it.
             </p>
         </section>
-        <section class="section">
+        <section class="section row">
             <hr class="line-style">
             <h3 style="padding: 25px;">Who are we?</h3>
             <article class="row">
@@ -102,7 +117,7 @@
             <div class="col-lg-8"></div>
             <div class="col align-self-end p-4 az-historical">
                 Maurizio Quattromani opened Azzurra in Jens Bangs Gade. Maurizio had before that been through the chef and waiter training at the hotel school in Naples and worked at the Italian Navy. While working in London for a short period, he met a Danish girl who took him to Aalborg. Here Maurizio saw the possibilities in opening his own restaurant.
-            </div>  <!-- I don't get why this shit is left-aligned. The same structure is in all other sections, so it's super weird.-->
+            </div> <!-- The bug here was because the section was missing the "row" class, therefore the FLEX (align-self-end) was ignored. Refer to Bootstrap documentation for more information. -Shannarra -->
         </section>
         <section class="section row">
             <hr class="line-style">
@@ -179,7 +194,7 @@
         </section>
         <section class="row section az-contacts" style="margin-top: 10%">
             <div class="col-md-5" src="" alt=""></div>
-            <div class="col-md-6" style="background-color: white; border: 1px solid red; margin: -5% 0; border-radius: 10%; padding: 5%">
+            <div class="col-md-6" style="background-color: #6C856D; margin-top: -10%; border-radius: 10%; padding-left: 5%; padding-top: 5%; margin-bottom: 10%">
                 <h1 class="text-center">Experience Italian atmosphere</h1>
                 <form class="form-horizontal" action="#">
                     <section class="row">
@@ -204,8 +219,11 @@
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="pwd">Location:</label>
-                                <div class="col-sm-10">          
-                                    <input type="password" class="form-control" id="pwd" placeholder="Choose Location" name="pwd">
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="place" id="">
+                                        <option value="">Jens Bangs Gade</option>
+                                        <option value="">Nordkraft</option>
+                                    </select>          
                                 </div>
                             </div>
                         </div>
@@ -222,15 +240,19 @@
                                     <textarea class="form-control" id="comments" placeholder="Enter comment" name="pwd"></textarea>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <input type="submit" class="form-control" value="Make a reservation!">
+                                </div>
+                            </div>
                         </div>
                     </section> 
-                    <section class="row">
-                        <!--This needs fixin'-->
-                        <input type="submit" class="form-control row col-md-8" value="Submit!" />                
-                    </section>   
                 </form>
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

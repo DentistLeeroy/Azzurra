@@ -61,7 +61,7 @@ body { background-color: #373737; color: white;}
 
 .az-historical {
     width: 30%;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .az-cuisine-type--first {
@@ -78,6 +78,7 @@ body { background-color: #373737; color: white;}
 .az-cuisine-type {
     height: 180px;
     background-color: var(--site-green);
+    padding-top: 1%;
 }
 
 .az-cuisine-type > img {
@@ -85,7 +86,7 @@ body { background-color: #373737; color: white;}
 }
 
 .az-center-text {
-    font-size: 22px;
+    font-size: 20px;
     padding: 0 22%;
 }
 
@@ -94,7 +95,7 @@ body { background-color: #373737; color: white;}
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    padding: 5% 0 5% 5%;
 }
 
 .az-contacts {
@@ -107,4 +108,28 @@ body { background-color: #373737; color: white;}
 
 #comments {
     height: calc(1.5rem + 160px);
+}
+
+#promoVideo {
+    min-width: 100%;
+}
+
+.section {
+    padding-top: 6%;
+}
+
+.line-style{
+    margin-left: 0.5%;
+    width: 15%;
+    border: 1.5px solid #6C856D;
+}
+
+.heading-margin{
+    margin-bottom: 2%;
+}
+
+#line-style-reviews {
+    margin-left: 0.5%;
+    width: 15%;
+    border: 1.5px solid #fff;
 }

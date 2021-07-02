@@ -34,10 +34,12 @@ body { background-color: #373737; color: white;}
     font-size: 22px;
     border: none;
     border-radius: 15px;
-    padding: 0 20px;
+    padding: 10px 35px;
+    transition: color 0.5s, background-color 0.5s;
 }
 .az-nav-cta--button:hover {
-    background-color: #ebcb01;
+    background-color: #6c856d;
+    color: white;
 }
 
 /*https://stackoverflow.com/questions/25878450/bootstrap-collapsed-navbar-buggy-open*/
@@ -71,8 +73,8 @@ body { background-color: #373737; color: white;}
     margin-left: 1%;
 }
 .az-cuisine-type--mid {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 3px solid #373737;
+    border-right: 3px solid #373737;
     z-index: 2;
 }
 .az-cuisine-type:not(.az-cuisine-type--first) {
@@ -82,12 +84,13 @@ body { background-color: #373737; color: white;}
     height: 180px;
     background-color: var(--site-green);
     padding-top: 1%;
-    transition: transform .5s;
+    transition: transform .3s;
 }
 
 .az-cuisine-type:hover {
-    transform: scale(1.5);
+    transform: scale(1.15);
     z-index: 9999;
+    border: none;
 }
 
 .az-cuisine-type > img {
@@ -156,7 +159,6 @@ body { background-color: #373737; color: white;}
 }
 
 .line-style{
-    margin-left: 0.5%;
     width: 15%;
     border: 1.5px solid #6C856D;
 }

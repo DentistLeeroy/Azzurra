@@ -32,10 +32,12 @@ body { background-color: #373737; color: white;}
     font-size: 22px;
     border: none;
     border-radius: 15px;
-    padding: 0 20px;
+    padding: 10px 35px;
+    transition: color 0.5s, background-color 0.5s;
 }
 .az-nav-cta--button:hover {
-    background-color: #ebcb01;
+    background-color: #6c856d;
+    color: white;
 }
 
 /*https://stackoverflow.com/questions/25878450/bootstrap-collapsed-navbar-buggy-open*/
@@ -156,7 +158,6 @@ body { background-color: #373737; color: white;}
 }
 
 .line-style{
-    margin-left: 0.5%;
     width: 15%;
     border: 1.5px solid #6C856D;
 }
